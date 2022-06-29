@@ -1,0 +1,21 @@
+LISTADO DE USUARIOS
+<table class="table table-striped table-sm">
+    <thead>
+        <tr>
+            <th class="text-center" scope="col">#</th>
+            <th class="text-center" scope="col">nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% users.forEach(usuario=> { %>
+            <tr>
+                <td class="text-center">
+                    <%= usuario.usu_codigo%>
+                </td>
+                <td class="text-center">
+                    <%= usuario.usu_nombre%>
+                </td>
+            </tr>
+            <% });%>
+    </tbody>
+</table>
